@@ -1,0 +1,24 @@
+{
+    "content_scripts": [
+        "mywed-photos.js",
+        "mywed-profile.js"
+    ], 
+    "description": "Extending mywed.ru via photoapps api.", 
+    "creator": "Dmitry Zuev", 
+    "background_scripts": [
+        "main.js"
+    ], 
+    "homepage_url": "http://photoapps.ru/", 
+    "version": "0.0.1", 
+    "browser_button": {
+        "caption": "Photoapps", 
+        "icon": "icons/button.png", 
+        "tooltipText": "Photoapps"
+    }, 
+    "name": "Photoapps",
+    "permissions": {
+        "tabs": true,
+        "cookies": true,
+        "xhr": ["http://*.mywed.ru/*", "http://*.photoapps.ru/*"]
+    }
+}
